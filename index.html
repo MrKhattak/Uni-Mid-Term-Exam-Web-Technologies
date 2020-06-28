@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registeration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="errors" id="error-container"></div>
+        <div class="student-form">
+            <h1 class="title">Student Account Registeration</h1>
+            <form action="">
+                <div class="row-1">
+                    <div class="form-group">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="middle_name">Middle Name</label>
+                        <input type="text" id="middle_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" required>
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="firstname.lastname@std.uaar.edu.pk" disabled>
+                    </div>
+                </div>
+                <div class="row-3">
+                    <div class="col-inputs">
+                        <div class="form-group radio-buttons">
+                            <label for="gender">Gender</label>
+                            <div class="radio">
+                                <label for="gender_male" class="radio-container">
+                                    <input type="radio" name="gender" id="gender_male" checked required>
+                                    <span class="checkmark"></span>
+                                    Male
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="gender_female" class="radio-container">
+                                    <input type="radio" name="gender" id="gender_female" required>
+                                    <span class="checkmark"></span>
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cnic">CNIC</label>
+                            <input type="number" placeholder="22100-50987643-1" id="cnic" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cell-no">Cell No</label>
+                            <input type="number" placeholder="0344-0987655"  id="cell-no" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password-confirm">Re-enter Password</label>
+                            <input type="password" id="password_confirm" required>
+                        </div>
+                    </div>
+                    <div class="col-img">
+                        <div class="img-container">
+                            <img src="./boy.png" alt="Boy Avatar" id="avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-4">         
+                    <button type="reset"
+                        onclick="document.getElementById('error-container').innerHTML = ''">Reset</button>
+                    <button type="submit" onclick="event.preventDefault(); validateForm();">Submit</button>              
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
+

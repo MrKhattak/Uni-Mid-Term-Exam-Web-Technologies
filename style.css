@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .errors {
+    width: 100%;
+    min-height: 200px;
+    width: 775px;
+    padding-top: 25px;
+}
+
+.container .errors .error {
+    background-color: darkred;
+    color: #fff;
+    padding: 5px 15px;
+    margin-bottom: 2.5px;
+}
+
+.student-form {
+    background-color: #4472C4;
+    padding: 5px 0 15px 0;
+    width: 775px;
+}
+
+h1.title {
+    font-size: 28px;
+    letter-spacing: 0.025em;
+    text-align: center;
+    color: white;
+    text-shadow:
+    -1px -1px 0 orange,
+    1px -1px 0 orange,
+    -1px 1px 0 orange,
+    1px 1px 0 orange;
+}
+
+.row-1, .row-2, .row-3, .row-4 {
+    margin: 5px;
+    padding: 5px;
+}
+
+.row-3 .col-inputs {
+    display: inline-block;
+    width: 50%;
+}
+
+.student-form label {
+    display: inline-block;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    width: 95px;
+}
+
+.student-form input {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 2.5px;
+    width: 225px;
+    background-color: #FFC000;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+.student-form .row-1 .form-group {
+    display: inline-block;
+}
+
+.student-form .row-1 label {
+    width: auto;
+}
+
+.student-form .row-1 .form-group:first-of-type label {
+    width: 95px;
+}
+
+.student-form .row-1 input {
+    width: 125px;
+}
+
+.student-form .row-2 input {
+    width: 300px;
+}
+
+.student-form .row-3 .radio-buttons .radio input,
+.student-form .row-3 .radio-buttons .radio label {
+    width: unset;
+    color: white;
+}
+
+.student-form .row-3 .radio-buttons .radio {
+    display: inline-block;
+}
+
+.student-form .row-3 .radio-buttons .radio label {
+    font-weight: normal;
+}
+
+.student-form .row-3 .radio-buttons .radio-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.student-form .row-3 .radio-buttons .radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.student-form .row-3 .radio-buttons .checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.student-form .row-3 .radio-buttons .radio-container:hover input ~ .checkmark {
+  background-color: #333;
+}
+
+.student-form .row-3 .radio-buttons .radio-container input:checked ~ .checkmark {
+  background-color: #000;
+}
+
+.student-form .row-3 .radio-buttons .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.student-form .row-3 .radio-buttons .radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.student-form .row-3 .radio-buttons .radio-container .checkmark:after {
+ 	top: 7px;
+	left: 6px;
+	width: 12.5px;
+	height: 12.5px;
+	border-radius: 50%;
+	background: white;
+}
+
+.row-3 .col-img {
+    display: inline-block;
+    width: 30%;
+}
+
+.col-img .img-container {
+    background-color: #27E7AC;
+    padding: 5px;
+}
+
+.col-img img {
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.row-4 {
+    text-align: center;
+}
+
+.row-4 button {
+    padding: 5px 50px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 3px outset #85707E;
+    box-shadow: 0 0 5px #85707E;
+    background-color: #5B9BD5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.row-4 button:hover {
+    background-color: darkred;
+}
